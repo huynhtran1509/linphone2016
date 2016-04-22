@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\silk_dec.c" />
+    <ClCompile Include="..\..\..\silk_enc.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='ARM'">
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_A2NLSF.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_ana_filt_bank_1.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_apply_sine_window.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_array_maxabs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_autocorr.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_biquad.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_biquad_alt.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_burg_modified.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_bwexpander.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_bwexpander_32.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_CNG.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_code_signs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_control_audio_bandwidth.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_control_codec_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_corrMatrix_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_create_init_destroy.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_decoder_set_fs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_decode_core.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_decode_frame.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_decode_parameters.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_decode_pitch.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_decode_pulses.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_dec_API.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_detect_SWB_input.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_encode_frame_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_encode_parameters.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_encode_pulses.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_enc_API.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_find_LPC_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_find_LTP_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_find_pitch_lags_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_find_pred_coefs_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_gain_quant.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_HP_variable_cutoff_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_init_encoder_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_inner_prod_aligned.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_interpolate.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_k2a.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_k2a_Q16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LBRR_reset.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_lin2log.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_log2lin.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LPC_inv_pred_gain.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LPC_synthesis_filter.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LPC_synthesis_order16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LP_variable_cutoff.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LSF_cos_table.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LTP_analysis_filter_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_LTP_scale_ctrl_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_MA.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF2A.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF2A_stable.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF_MSVQ_decode.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF_MSVQ_encode_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF_stabilize.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF_VQ_rate_distortion_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF_VQ_sum_error_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NLSF_VQ_weights_laroia.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_noise_shape_analysis_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NSQ.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_NSQ_del_dec.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_pitch_analysis_core.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_pitch_est_tables.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_PLC.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_prefilter_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_process_gains_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_process_NLSFs_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_quant_LTP_gains_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_range_coder.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_regularize_correlations_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_down2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_down2_3.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_down3.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_AR2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_ARMA4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_copy.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_down4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_down_FIR.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_IIR_FIR.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_up2_HQ.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private_up4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_rom.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_up2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_residual_energy16_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_residual_energy_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_scale_copy_vector16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_scale_vector.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_schur.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_schur64.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_shell_coder.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_sigm_Q15.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_solve_LS_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_sort.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_sum_sqr_shift.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_gain.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_LTP.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_10.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_10.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_other.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_pitch_lag.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_pulses_per_block.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_sign.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_type_offset.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_VAD.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_VQ_nearest_neighbor_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_warped_autocorrelation_FIX.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='ARM'">
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_common_pitch_est_defines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_define.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_Inlines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_macros.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_main.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_main_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_pitch_est_defines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_PLC.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_private.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_rom.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_resampler_structs.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_setup_complexity.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_SigProc_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_structs.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_structs_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_10.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_16.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_10.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_16.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\src\SKP_Silk_tuning_parameters.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='Win32'">
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_A2NLSF.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_ana_filt_bank_1.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_apply_sine_window.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_array_maxabs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_autocorr.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_biquad.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_biquad_alt.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_burg_modified.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_bwexpander.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_bwexpander_32.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_CNG.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_code_signs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_control_audio_bandwidth.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_control_codec_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_corrMatrix_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_create_init_destroy.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decoder_set_fs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_core.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_frame.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_parameters.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_pitch.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_pulses.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_dec_API.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_detect_SWB_input.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_encode_frame_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_encode_parameters.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_encode_pulses.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_enc_API.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_LPC_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_LTP_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_pitch_lags_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_pred_coefs_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_gain_quant.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_HP_variable_cutoff_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_init_encoder_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_inner_prod_aligned.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_interpolate.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_k2a.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_k2a_Q16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LBRR_reset.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_lin2log.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_log2lin.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LPC_inv_pred_gain.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LPC_synthesis_filter.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LPC_synthesis_order16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LP_variable_cutoff.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LSF_cos_table.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LTP_analysis_filter_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LTP_scale_ctrl_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_MA.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF2A.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF2A_stable.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_MSVQ_decode.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_MSVQ_encode_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_stabilize.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_VQ_rate_distortion_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_VQ_sum_error_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_VQ_weights_laroia.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_noise_shape_analysis_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NSQ.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NSQ_del_dec.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_pitch_analysis_core.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_pitch_est_tables.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_PLC.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_prefilter_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_process_gains_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_process_NLSFs_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_quant_LTP_gains_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_range_coder.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_regularize_correlations_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_down2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_down2_3.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_down3.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_AR2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_ARMA4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_copy.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_down4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_down_FIR.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_IIR_FIR.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_up2_HQ.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_up4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_rom.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_up2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_residual_energy16_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_residual_energy_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_scale_copy_vector16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_scale_vector.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_schur.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_schur64.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_shell_coder.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_sigm_Q15.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_solve_LS_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_sort.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_sum_sqr_shift.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_gain.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_LTP.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_10.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_10.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_other.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_pitch_lag.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_pulses_per_block.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_sign.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_type_offset.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_VAD.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_VQ_nearest_neighbor_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_warped_autocorrelation_FIX.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='Win32'">
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_common_pitch_est_defines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_define.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_Inlines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_macros.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_main.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_main_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_pitch_est_defines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_PLC.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_rom.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_structs.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_setup_complexity.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_SigProc_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_structs.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_structs_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_10.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_16.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_10.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_16.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tuning_parameters.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='x64'">
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_A2NLSF.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_ana_filt_bank_1.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_apply_sine_window.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_array_maxabs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_autocorr.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_biquad.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_biquad_alt.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_burg_modified.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_bwexpander.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_bwexpander_32.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_CNG.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_code_signs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_control_audio_bandwidth.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_control_codec_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_corrMatrix_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_create_init_destroy.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decoder_set_fs.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_core.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_frame.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_parameters.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_pitch.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_decode_pulses.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_dec_API.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_detect_SWB_input.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_encode_frame_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_encode_parameters.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_encode_pulses.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_enc_API.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_LPC_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_LTP_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_pitch_lags_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_find_pred_coefs_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_gain_quant.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_HP_variable_cutoff_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_init_encoder_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_inner_prod_aligned.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_interpolate.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_k2a.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_k2a_Q16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LBRR_reset.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_lin2log.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_log2lin.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LPC_inv_pred_gain.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LPC_synthesis_filter.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LPC_synthesis_order16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LP_variable_cutoff.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LSF_cos_table.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LTP_analysis_filter_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_LTP_scale_ctrl_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_MA.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF2A.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF2A_stable.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_MSVQ_decode.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_MSVQ_encode_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_stabilize.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_VQ_rate_distortion_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_VQ_sum_error_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NLSF_VQ_weights_laroia.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_noise_shape_analysis_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NSQ.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_NSQ_del_dec.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_pitch_analysis_core.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_pitch_est_tables.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_PLC.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_prefilter_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_process_gains_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_process_NLSFs_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_quant_LTP_gains_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_range_coder.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_regularize_correlations_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_down2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_down2_3.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_down3.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_AR2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_ARMA4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_copy.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_down4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_down_FIR.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_IIR_FIR.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_up2_HQ.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private_up4.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_rom.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_up2.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_residual_energy16_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_residual_energy_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_scale_copy_vector16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_scale_vector.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_schur.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_schur64.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_shell_coder.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_sigm_Q15.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_solve_LS_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_sort.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_sum_sqr_shift.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_gain.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_LTP.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_10.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_10.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_16.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_other.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_pitch_lag.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_pulses_per_block.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_sign.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_type_offset.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_VAD.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_VQ_nearest_neighbor_FIX.c" />
+    <ClCompile Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_warped_autocorrelation_FIX.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='x64'">
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_common_pitch_est_defines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_define.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_Inlines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_macros.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_main.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_main_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_pitch_est_defines.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_PLC.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_private.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_rom.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_resampler_structs.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_setup_complexity.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_SigProc_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_structs.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_structs_FIX.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_10.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB0_16.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_10.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tables_NLSF_CB1_16.h" />
+    <ClInclude Include="..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\src\SKP_Silk_tuning_parameters.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\linphone\mediastreamer2\build\windows10\mediastreamer2\mediastreamer2.vcxproj">
+      <Project>{88e3c241-eb6f-4c84-80dc-89b8961daf80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\linphone\oRTP\build\windows10\ortp\ortp.vcxproj">
+      <Project>{2e56b851-9d8d-40e5-84bb-e4ee63b71d25}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{b84d5c3b-6de5-49c8-b3dd-5eb67b01a527}</ProjectGuid>
+    <Keyword>DynamicLibrary</Keyword>
+    <ProjectName>libmssilk</ProjectName>
+    <RootNamespace>libmssilk</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10069.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\linphone\mediastreamer2\include;$(ProjectDir)..\..\..\..\linphone\oRTP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Platform)'=='ARM'">$(ProjectDir)..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_ARM_v1.0.9\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Platform)'=='Win32'">$(ProjectDir)..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Platform)'=='x64'">$(ProjectDir)..\..\..\sdk\SILK_SDK_SRC_v1.0.9\SILK_SDK_SRC_FIX_v1.0.9\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
